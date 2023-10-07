@@ -25,7 +25,7 @@ std::vector<std::string> find_combinations(const std::string &input_str, std::ma
 
                 for (const std::string &prev_combination : dp[j - 1])
                 {
-                    current_combinations.push_back(prev_combination + (prev_combination.empty() ? "" : " ") + sticker);
+                    current_combinations.push_back(prev_combination + (prev_combination.empty() ? "" : ", ") + sticker);
                 }
             }
         }
@@ -63,10 +63,10 @@ int main()
         {"R", "Reason Gaming"},
         {"S", "Splyce"},
         {"T", "Titan"},
-        {"U", "u_placeholder"},
+        {"U", "Teamwork"},
         {"V", "Vitality"},
         {"W", "w_placeholder"},
-        {"X", "x_placeholder"},
+        {"X", "Vexed Gaming"},
         {"Y", "y_placeholder"},
         {"Z", "z_placeholder"},
         {"GL", "GamerLegion"},
@@ -78,7 +78,9 @@ int main()
         {"GO", "GO"},
         {"BIG", "BIG"},
         {"DICK", "DICK"},
-        {"IM", "iM"}};
+        {"IM", "iM"},
+        {"OG", "OpTic Gaming"}
+        };
 
     // Word to convert to sticker craft
     std::string input_str = "NOAH";
