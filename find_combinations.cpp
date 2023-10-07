@@ -25,7 +25,11 @@ std::vector<std::string> find_combinations(const std::string &input_str, std::ma
             }
         }
 
-        std::sort(current_combinations.begin(), current_combinations.end(), [](const std::string &a, const std::string &b) {
+        std::sort(
+            current_combinations.begin(),
+            current_combinations.end(),
+            [](const std::string &a, const std::string &b
+        ) {
             return a.size() < b.size();
         });
 
