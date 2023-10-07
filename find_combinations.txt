@@ -28,8 +28,3 @@ def find_combinations(input_str, dictionary):
     # The last position in dp contains the best combinations
     return dp[-1]
 
-# Example usage:
-input_str = "GLASA"
-dictionary = ["G", "L", "A", "S", "A", "GL"]
-combinations = find_combinations(input_str, dictionary)
-print(combinations)
