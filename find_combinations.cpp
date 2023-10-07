@@ -54,7 +54,7 @@ int main()
         {"I", "Flashbang"},
         {"J", "j_placeholder"},
         {"K", "SK Gaming"},
-        {"L", "l_placeholder"},
+        {"L", "CR4ZY"},
         {"M", "Clan-Mystik"},
         {"N", "Team EnvyUs"},
         {"O", "Evil Geniuses"},
