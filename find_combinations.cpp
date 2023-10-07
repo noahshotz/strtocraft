@@ -79,11 +79,13 @@ int main()
         {"BIG", "BIG"},
         {"DICK", "DICK"},
         {"IM", "iM"},
-        {"OG", "OpTic Gaming"}
+        {"OG", "OpTic Gaming"},
+        {"HR", "HellRaisers"},
+        {"HF", "Have Fun"}
         };
 
     // Word to convert to sticker craft
-    std::string input_str = "NOAH";
+    std::string input_str = "KRIMBO";
 
     std::cout << "Finding combinations for: " << input_str << std::endl;
 
