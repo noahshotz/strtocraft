@@ -1,8 +1,6 @@
 #include <iostream>
 #include <map>
 #include <vector>
-#include <string>
-#include <algorithm>
 
 std::vector<std::string> find_combinations(const std::string &input_str, std::map<std::string, std::string> dictionary)
 {
@@ -11,15 +9,19 @@ std::vector<std::string> find_combinations(const std::string &input_str, std::ma
     // Add an empty string at position 0
     dp[0].emplace_back("");
 
-    for (int i = 1; i <= static_cast<int>(input_str.length()); ++i) {
+    for (int i = 1; i <= static_cast<int>(input_str.length()); ++i)
+    {
         std::vector<std::string> current_combinations;
-        for (int j = 1; j <= i; ++j){
+        for (int j = 1; j <= i; ++j)
+        {
             std::string substring = input_str.substr(j - 1, i - j + 1);
 
-            if (dictionary.find(substring) != dictionary.end()) {
+            if (dictionary.find(substring) != dictionary.end())
+            {
                 std::string sticker = dictionary[substring];
 
-                for (const std::string &prev_combination : dp[j - 1]) {
+                for (const std::string &prev_combination : dp[j - 1])
+                {
                     current_combinations.push_back(prev_combination + (prev_combination.empty() ? "" : ", ") + sticker);
                 }
             }
@@ -28,10 +30,10 @@ std::vector<std::string> find_combinations(const std::string &input_str, std::ma
         std::sort(
             current_combinations.begin(),
             current_combinations.end(),
-            [](const std::string &a, const std::string &b
-        ) {
-            return a.size() < b.size();
-        });
+            [](const std::string &a, const std::string &b)
+            {
+                return a.size() < b.size();
+            });
 
         dp[i] = (current_combinations.size() <= 4) ? current_combinations : std::vector<std::string>();
     }
@@ -98,11 +100,10 @@ int main()
         {"LNZ", "LNZ Autograph"},
         {"NEO", "NEO Autograph"},
         {"OBO", "oBo Autograph"},
-        {"FER", "FER Autograph"}
-        };
+        {"FER", "FER Autograph"}};
 
     // Word to convert to sticker craft
-    std::string input_str = "BANDO";
+    std::string input_str = "GLOCK";
 
     std::vector<std::string> combinations = find_combinations(input_str, dictionary);
 
