@@ -11,7 +11,9 @@ String Input Conversion: Convert any given string input into potential sticker c
 
 ## Usage
 Navigate into the build folder: `cd strtocraft/build`
+
 Build into executable: `make`
+
 Run the program: `./strtocraft`
 
 ## Contributing
