@@ -1,4 +1,4 @@
-#strtocraft
+# strtocraft
 
 ## Overview
 strtocraft is a specialized tool designed for generating possible combinations for CS:GO/CS2 sticker crafts using a string input. It's an innovative solution for gamers and enthusiasts looking to explore crafting options in Counter-Strike: Global Offensive and Counter-Strike 2.
