@@ -1,11 +1,19 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <cctype>
+#include <string>
 
 #include "../include/find_combinations.h"
 
-std::vector<std::string> find_combinations(const std::string &input_str, std::map<std::string, std::string> dictionary)
+std::vector<std::string> find_combinations(std::string &input_str, std::map<std::string, std::string> dictionary)
 {
+
+    // convert input string to uppercase
+    std::transform(input_str.begin(), input_str.end(), input_str.begin(),
+                   [](unsigned char c)
+                   { return std::toupper(c); });
+
     // Create a vector to store the best combinations for each position in the input string
     std::vector<std::vector<std::string>> dp(input_str.length() + 1);
 
