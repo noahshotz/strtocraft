@@ -7,14 +7,12 @@ strtocraft is a specialized tool designed for generating possible combinations f
 String Input Conversion: Convert any given string input into potential sticker craft combinations. CS:GO and CS2 Compatibility: Tailored specifically for use with Counter-Strike: Global Offensive and Counter-Strike 2. If multiple combinations are possible, the output will be sorted, starting with the shortest. Since the currently existing weapons in the game with 5 sticker slots (G3SG1 and R8 Revolver) are not really suitable for sticker crafts anyway, they are ignored in this context. If you want to change the 4 sticker limit you can do so in `find_combinations.cpp` by modifying the `max_elements` value.
 
 ## Installation
-`git clone https://github.com/noahshotz/strtocraft.git`
+Clone the project: `git clone https://github.com/noahshotz/strtocraft.git`
 
 ## Usage
-Navigate into the build folder: `cd strtocraft/build`
-
-Build into executable: `make`
-
-Run the program: `./strtocraft`
+- Navigate into the build folder: `cd strtocraft/build`
+- Build into executable: `make`
+- Run the program: `./strtocraft`
 
 ## Contributing
 Have an idea? Send me a pull request or contact me at info@digitalbando.com
