@@ -45,6 +45,7 @@ std::vector<std::string> find_combinations(const std::string &input_str, std::ma
             }
         }
 
+        // Sort the current combinations by size
         std::sort(
             current_combinations.begin(),
             current_combinations.end(),
@@ -53,6 +54,7 @@ std::vector<std::string> find_combinations(const std::string &input_str, std::ma
                 return a.size() < b.size();
             });
 
+        // Add the current combinations to the dp vector
         dp[i] = (current_combinations.size() <= 4) ? current_combinations : std::vector<std::string>();
     }
 
