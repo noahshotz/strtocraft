@@ -16,5 +16,4 @@ Explain how to use the program. Include examples of input and output, demonstrat
 Encourage contributions and provide guidelines on how others can contribute to the project. Mention any coding standards or contribution procedures you'd like to be followed.
 
 ## License
-State the license under which the project is released.
-
+Licensed under CC BY-NC 4.0 DEED. For commercial use contact info@digitalbando.com
