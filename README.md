@@ -10,6 +10,7 @@ String Input Conversion: Convert any given string input into potential sticker c
 - Clone the project: `git clone https://github.com/noahshotz/strtocraft.git`
 - Navigate into the project; `cd stringtocraft`
 - Create build folder: `mkdir build`
+- Navigate into the build folder: `cd build`
 - Configure the project `cmake ..`
 
 ## Usage
