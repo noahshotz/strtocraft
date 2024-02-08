@@ -15,9 +15,16 @@ int main(int, char **)
     std::cout << "Input: " << input_str << std::endl;
 
     std::size_t i = 1;
-    for (auto combination : combinations)
+    if (combinations.empty())
     {
-        std::cout << "Option " << i << ": " << combination << std::endl;
-        i++;
+        std::cout << "No options found." << std::endl;
+    }
+    else
+    {
+        for (auto combination : combinations)
+        {
+            std::cout << "Option " << i << ": " << combination << std::endl;
+            i++;
+        }
     }
 }

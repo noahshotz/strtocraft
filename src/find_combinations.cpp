@@ -21,7 +21,7 @@ std::vector<std::string> find_combinations(std::string &input_str, std::map<std:
     dp[0].emplace_back("");
 
     // Set limit for the number of stickers in a combination
-    const std::size_t max_elements = 4;
+    const std::size_t max_elements = 5;
 
     for (int i = 1; i <= static_cast<int>(input_str.length()); ++i)
     {

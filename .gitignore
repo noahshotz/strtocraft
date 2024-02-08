@@ -1,1 +1,27 @@
+# macOS system files
+.DS_Store
+
+# Swap files from text editors
+*.swp
+
+# VSCode user settings
+.vscode/
+
+# Build directory
 build/
+
+# Ignore CMake user files
+CMakeLists.txt.user
+
+# Object files and Binaries
+*.o
+*.exe
+*.dll
+*.so
+
+# Temporary files
+*~
+*.tmp
+
+# Log files
+*.log
